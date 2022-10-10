@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-/* GET home page. */
 
 
+//Projects stored in JSON like format to access in projects.hbs
 let projects = [
   {'name':'Scorpios Pizza',
     'url':'https://github.com/InderjitSingh2002/COMP1011-Pizza',
@@ -42,21 +42,37 @@ let projects = [
   }
 ];
 
+
+
+/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Inder Parihar - Portfolio' });
 });
 
+
+/* GET home page. */
 router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Inder Parihar - Portfolio' });
 });
 
+
+
+/* GET projects page. */
 router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Inder Parihar - Portfolio', projects: projects});
+  res.render('projects', { title: 'Projects', projects: projects});
 });
 
 
+/* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'Inder Parihar - Portfolio'});
+  res.render('about', { title: 'About Me'});
+});
+
+
+
+/* GET contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Contact'});
 });
 
 module.exports = router;
