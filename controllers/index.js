@@ -54,4 +54,9 @@ router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Inder Parihar - Portfolio', projects: projects});
 });
 
+
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'Inder Parihar - Portfolio'});
+});
+
 module.exports = router;
