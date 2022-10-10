@@ -34,5 +34,38 @@
     grid-template-columns: 45vw 45vw;
     gap: 20px 20px;
   }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+  }
+
+  .avatar {
+    width: 80vw;
+  }
   
+}
+
+
+.tag {
+  color: gainsboro;
+}
+
+.avatar {
+  width: 25vw;
+  height: auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.textarea {
+  margin-bottom: 10px;
 }
