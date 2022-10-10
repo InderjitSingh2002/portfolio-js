@@ -1,0 +1,39 @@
+<section class="has-text-centered">
+  <div class="section">
+
+<p class="title">Projects</p>
+
+<div class="notification has-text-left tile is-parent">
+  <p class="tile">Hey, check out some of the projects that I have worked on below. I have worked with different technologies such as JavaFX, ASP.NET, Angular and more. I have also done deployments using Amazon Web Services, Heroku and Azure. Don't forget to check the Git-Hub repository by clicking the GitHub link below the project title. If you like my work, consider connecting with me on LinkedIn. You can find the link on the About page or the website footer.</p>
+<img src="./images/notification.png" alt="notification avatar" class="image is-128x128">
+</div>
+  </div>
+
+  <!--Contains the list of projects-->
+<div class="proj-container">
+{{#each projects}}
+<div class="card proj">
+  <div class="card-image">
+    <figure class="image">
+      <img src="{{this.img}}" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-4">{{this.name}}</p>
+        <p class="subtitle is-6"><a href="{{this.url}}">GitHub</a></p>
+      </div>
+    </div>
+
+    <div class="content">
+      {{this.desc}}
+    </div>
+  </div>
+  <span class="tag">
+  {{this.status}}
+</span>
+</div>
+{{/each}}
+</div>
+</section>

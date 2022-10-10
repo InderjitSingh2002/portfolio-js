@@ -1,3 +1,39 @@
-.footer > .tile {
+.contains-content {
   flex-direction: column;
+}
+
+.proj-container {
+  margin-left: 8vw;
+  margin-right: 10vw;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  gap: 20px 20px;
+}
+
+.proj {
+}
+
+#opening {
+  padding-top: 25vh;
+}
+
+#avatar:hover {
+  transform: rotate(-20deg);
+}
+
+#avatar:active {
+  transform: rotate(20deg);
+}
+
+
+
+@media (max-width: 800px) {
+  .proj-container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    gap: 20px 20px;
+  }
+  
 }
